@@ -1,1 +1,11 @@
-<p>header works!</p>
+<header class="flex justify-between items-center p-4 shadow-md sticky top-0">
+  <a class="header-logo" [routerLink]="['']" routerLinkActive="link-active" [routerLinkActiveOptions]="{ exact: true }">
+    <h1 class="uppercase text-3xl font-light whitespace-nowrap">Gabriela Goia</h1>
+  </a>
+  <app-nav></app-nav>
+  <div class="flex items-center header-social-links">
+    <a href="#" class="ps-1.5 inline-block text-xl"><i class="bi bi-facebook"></i></a>
+    <a href="#" class="ps-1.5 inline-block text-xl"><i class="bi bi-instagram"></i></a>
+    <a href="#" class="ps-1.5 inline-block text-xl"><i class="bi bi-linkedin"></i></a>
+  </div>
+</header>
