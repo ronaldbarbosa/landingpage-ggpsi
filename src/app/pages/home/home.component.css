@@ -1,0 +1,8 @@
+main {
+  scroll-margin-top: 100px;
+}
+
+.hero {
+  width: 100%;
+  min-height: calc(100vh - 180px);
+}

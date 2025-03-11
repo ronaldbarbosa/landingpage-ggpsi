@@ -1,0 +1,49 @@
+.info-item i {
+  color: var(--primary);
+  background: color-mix(in srgb, var(--primary), transparent 92%);
+  transition: all 0.3s ease-in-out;
+}
+
+.info-item:hover i {
+  background: var(--primary);
+  color: var(--lighter);
+}
+
+.section-title h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: var(--primary);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+  border: 1px solid color-mix(in srgb, var(--primary), transparent 80%);
+  border-radius: 0;
+  color: var(--darker);
+  background-color: white;
+  width: 100%;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+textarea::placeholder {
+  color: color-mix(in srgb, var(--darker), transparent 70%);
+}

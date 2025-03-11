@@ -37,5 +37,5 @@
   li:hover>.link:before,
   .link-active:before {
     visibility: visible;
-    width: 25px;
+    width: 100%;
   }
