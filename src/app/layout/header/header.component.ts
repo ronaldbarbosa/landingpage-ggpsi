@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { NavComponent } from "./nav/nav.component";
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-header',
-  imports: [NavComponent, NgOptimizedImage, RouterLink, RouterLinkActive],
+  imports: [NavComponent, RouterLink, RouterLinkActive],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })

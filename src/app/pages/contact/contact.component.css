@@ -9,17 +9,8 @@
   color: var(--lighter);
 }
 
-.section-title h2:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 3px;
-  background: var(--primary);
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+.section-title h2 {
+  border-bottom: 5px solid var(--primary);
 }
 
 input[type=text],
