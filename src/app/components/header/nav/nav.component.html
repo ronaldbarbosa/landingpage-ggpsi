@@ -1,8 +1,35 @@
-<nav>
-  <ul class="flex">
-    <li>Início</li>
-    <li>Sobre Mim</li>
-    <li>Serviços</li>
-    <li>Contato</li>
-  </ul>
-</nav>
+@if (showMenu) {
+  <div class="fixed inset-0 bg-black opacity-60 z-40 sm:hidden" (click)="showMenu = false">
+  </div>
+}
+
+<div class="sm:hidden z-50 relative">
+  <button (click)="showMenu = !showMenu" [ngClass]="showMenu ? 'bg-gray-200 rounded p-1' : ''"
+    class="text-gray-700 focus:outline-none transition">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+  </button>
+</div>
+
+<div
+  class="w-1/2 h-full sm:w-auto z-50 sm:static fixed top-0 left-0 sm:bg-transparent bg-white sm:shadow-none shadow-lg"
+  [ngClass]="{
+    'block': showMenu,
+    'hidden': !showMenu,
+    'sm:flex': true
+  }">
+  <div class="flex items-center justify-between border-b sm:hidden">
+    <span class="font-semibold text-lg">Menu</span>
+    <button (click)="showMenu = false" class="text-gray-700 hover:bg-gray-200 rounded p-1 focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+  <nav>
+    <a routerLink="/" class="block sm:inline-block">Inicio</a>
+    <a routerLink="/sobre" class="block sm:inline-block">Sobre</a>
+    <a routerLink="/contato" class="block sm:inline-block">Contato</a>
+  </nav>
+</div>
