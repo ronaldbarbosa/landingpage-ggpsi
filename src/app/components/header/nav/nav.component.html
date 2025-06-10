@@ -1,6 +1,6 @@
 @if (showMenu) {
-<div class="fixed inset-0 bg-black opacity-60 z-40 sm:hidden" (click)="showMenu = false">
-</div>
+  <div class="fixed inset-0 bg-black opacity-60 z-40 sm:hidden" (click)="showMenu = false">
+  </div>
 }
 
 <div class="sm:hidden z-50 relative">
@@ -13,7 +13,7 @@
 </div>
 
 <div
-  class="w-1/2 h-full sm:w-auto z-50 sm:static fixed top-0 left-0 sm:bg-transparent bg-white sm:shadow-none shadow-lg"
+  class="w-auto h-full mx-0 sm:mx-4 sm:w-auto z-50 sm:static fixed top-0 left-0 sm:bg-transparent bg-white sm:shadow-none shadow-lg"
   [ngClass]="{
     'block': showMenu,
     'hidden': !showMenu,
@@ -27,11 +27,15 @@
       </svg>
     </button>
   </div>
-  <nav>
-    <a routerLink="/" class="block sm:inline-block">Inicio</a>
-    <a routerLink="/sobre" class="block sm:inline-block">Sobre</a>
-    <a routerLink="/servicos" class="block sm:inline-block">Serviços</a>
-    <a routerLink="/experiencia" class="block sm:inline-block">Formação & Experiências</a>
-    <a routerLink="/contato" class="block sm:inline-block">Contato</a>
+  <nav class="font-menu">
+    @for (link of links; track link) {
+      <a (click)="showMenu = !showMenu"
+        routerLink="{{ link.path }}"
+        routerLinkActive="text-[var(--highlight-color)]"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="block sm:inline-block m-4 relative after:content-[''] after:block after:w-0 after:h-[2px] after:bg-[var(--highlight-color)] after:transition-all after:duration-500 hover:after:w-full hover:text-[var(--highlight-color)] hover:duration-500">
+        {{ link.label }}
+      </a>
+    }
   </nav>
 </div>
