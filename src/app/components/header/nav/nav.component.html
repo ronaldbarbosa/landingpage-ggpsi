@@ -1,9 +1,9 @@
 @if (showMenu) {
-  <div class="fixed inset-0 bg-black opacity-60 z-40 sm:hidden" (click)="showMenu = false">
-  </div>
+<div class="fixed inset-0 bg-black opacity-60 z-40 sm:hidden" (click)="showMenu = false">
+</div>
 }
 
-<div class="sm:hidden z-50 relative">
+<div class="sm:hidden z-50 relative me-4">
   <button (click)="showMenu = !showMenu" [ngClass]="showMenu ? 'bg-gray-200 rounded p-1' : ''"
     class="text-gray-700 focus:outline-none transition">
     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -19,8 +19,8 @@
     'hidden': !showMenu,
     'sm:flex': true
   }">
-  <div class="flex items-center justify-between border-b sm:hidden">
-    <span class="font-semibold text-lg">Menu</span>
+  <div class="flex items-center ps-4 py-4 justify-between border-b sm:hidden">
+    <span class="font-semibold text-lg font-title">Menu</span>
     <button (click)="showMenu = false" class="text-gray-700 hover:bg-gray-200 rounded p-1 focus:outline-none">
       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -29,13 +29,11 @@
   </div>
   <nav class="font-menu">
     @for (link of links; track link) {
-      <a (click)="showMenu = !showMenu"
-        routerLink="{{ link.path }}"
-        routerLinkActive="text-[var(--highlight-color)]"
-        [routerLinkActiveOptions]="{ exact: true }"
-        class="block sm:inline-block m-4 relative after:content-[''] after:block after:w-0 after:h-[2px] after:bg-[var(--highlight-color)] after:transition-all after:duration-500 hover:after:w-full hover:text-[var(--highlight-color)] hover:duration-500">
-        {{ link.label }}
-      </a>
+    <a (click)="showMenu = !showMenu" routerLink="{{ link.path }}" routerLinkActive="text-[var(--highlight-color)]"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="block sm:inline-block m-4 relative after:content-[''] after:block after:w-0 after:h-[2px] after:bg-[var(--highlight-color)] after:transition-all after:duration-500 hover:after:w-full hover:text-[var(--highlight-color)] hover:duration-500">
+      {{ link.label }}
+    </a>
     }
   </nav>
 </div>

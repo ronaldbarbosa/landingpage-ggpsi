@@ -1,0 +1,11 @@
+<section class="flex flex-col items-center">
+  <div>
+    <h2 class="text-2xl font-bold font-title text-center">{{ pageTitle().title }}</h2>
+    <div class="h-1 w-20 bg-[var(--highlight-color)] mx-auto mt-4 rounded"></div>
+  </div>
+  @if (pageTitle().subtitle !== null) {
+    <div>
+      <h5 class="text-center">{{ pageTitle().subtitle }}</h5>
+    </div>
+  }
+</section>

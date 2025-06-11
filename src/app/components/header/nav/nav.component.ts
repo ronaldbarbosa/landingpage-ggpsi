@@ -1,3 +1,4 @@
+import { Link } from './../../../interfaces/Link';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive } from '@angular/router';
@@ -10,7 +11,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class NavComponent {
   showMenu = false;
-  links = [
+  links : Link[] = [
     { label: 'Inicio', path: '/' },
     { label: 'Sobre', path: '/sobre' },
     { label: 'Serviços', path: '/servicos' },
