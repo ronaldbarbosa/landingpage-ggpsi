@@ -1,78 +1,65 @@
 <app-header></app-header>
-<main>
-  <section id="contact" class="mx-20 my-8">
-    <div class="section-title flex flex-col items-center mb-20">
-      <h2 class="text-3xl font-bold mb-4 pb-4 fade-up">Contato</h2>
+<main class="pt-16 sm:pt-18 md:pt-20">
+  <section id="contact" class="mx-4 sm:mx-6 md:mx-12 lg:mx-16 xl:mx-20 my-6 sm:my-8 md:my-12">
+    <div class="section-title flex flex-col items-center mb-10 sm:mb-16 md:mb-20">
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4 pb-2 sm:pb-4 fade-up">Contato</h2>
     </div>
 
-    <div class="">
-      <div class="info-wrap p-8 bg-white shadow-lg fade-up">
-        <div class="flex gap-20">
-          <div class="info-item flex mb-10 fade-up-slowly">
-            <i class="bi bi-geo-alt text-xl w-11 h-11 flex justify-center items-center rounded-full mr-3.5"></i>
-            <div>
-              <h3 class="p-0 text-lg font-bold mb-1.5">Endereço</h3>
-              <p class="p-0 mb-0 text-sm">Av. José Bonifácio, 1025 - Jardim Flamboyant</p>
+    <div class="fade-up">
+      <div class="info-wrap p-4 sm:p-6 md:p-8 bg-white shadow-lg rounded-lg">
+        <!-- Informações de Contato -->
+        <div class="flex flex-col lg:flex-row lg:gap-8 xl:gap-20 space-y-6 lg:space-y-0 mb-8 sm:mb-10">
+          <!-- Endereço -->
+          <div class="info-item flex fade-up-slowly">
+            <div class="flex-shrink-0">
+              <i class="bi bi-geo-alt text-lg sm:text-xl w-10 h-10 sm:w-11 sm:h-11 flex justify-center items-center rounded-full mr-3 sm:mr-3.5 bg-gray-100"></i>
+            </div>
+            <div class="flex-1">
+              <h3 class="p-0 text-base sm:text-lg font-bold mb-1 sm:mb-1.5">Endereço</h3>
+              <p class="p-0 mb-0 text-xs sm:text-sm">Av. José Bonifácio, 1025 - Jardim Flamboyant</p>
+              <p class="p-0 mb-0 text-xs sm:text-sm text-gray-600">Campinas - SP, 13091-140</p>
             </div>
           </div>
 
-          <div class="info-item flex mb-10 fade-up-slowly">
-            <i class="bi bi-telephone text-xl w-11 h-11 flex justify-center items-center rounded-full mr-3.5"></i>
-            <div>
-              <h3 class="p-0 text-lg font-bold mb-1.5">Telefone</h3>
-              <p class="p-0 mb-0 text-sm">(11) 99999-9999</p>
+          <!-- Telefone -->
+          <div class="info-item flex fade-up-slowly">
+            <div class="flex-shrink-0">
+              <i class="bi bi-telephone text-lg sm:text-xl w-10 h-10 sm:w-11 sm:h-11 flex justify-center items-center rounded-full mr-3 sm:mr-3.5 bg-gray-100"></i>
+            </div>
+            <div class="flex-1">
+              <h3 class="p-0 text-base sm:text-lg font-bold mb-1 sm:mb-1.5">Telefone</h3>
+              <p class="p-0 mb-0 text-xs sm:text-sm">(11) 99999-9999</p>
+              <p class="p-0 mb-0 text-xs sm:text-sm text-gray-600">WhatsApp disponível</p>
             </div>
           </div>
 
-          <div class="info-item flex mb-10 fade-up-slowly">
-            <i class="bi bi-envelope text-xl w-11 h-11 flex justify-center items-center rounded-full mr-3.5"></i>
-            <div>
-              <h3 class="p-0 text-lg font-bold mb-1.5">Email</h3>
-              <p class="p-0 mb-0 text-sm">gabriela.goia&#64;email.com</p>
+          <!-- Email -->
+          <div class="info-item flex fade-up-slowly">
+            <div class="flex-shrink-0">
+              <i class="bi bi-envelope text-lg sm:text-xl w-10 h-10 sm:w-11 sm:h-11 flex justify-center items-center rounded-full mr-3 sm:mr-3.5 bg-gray-100"></i>
+            </div>
+            <div class="flex-1">
+              <h3 class="p-0 text-base sm:text-lg font-bold mb-1 sm:mb-1.5">Email</h3>
+              <p class="p-0 mb-0 text-xs sm:text-sm break-all">gabriela.goia&#64;email.com</p>
+              <p class="p-0 mb-0 text-xs sm:text-sm text-gray-600">Respondemos em até 24h</p>
             </div>
           </div>
         </div>
 
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14702.577813238768!2d-47.0291171!3d-22.88958895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8cf64fd70d285%3A0x544878ed0df45765!2sAv.%20Jos%C3%A9%20Bonif%C3%A1cio%2C%201025%20-%20Jardim%20Flamboyant%2C%20Campinas%20-%20SP%2C%2013091-140!5e0!3m2!1spt-BR!2sbr!4v1741720373960!5m2!1spt-BR!2sbr"
-          height="450" style="border:0;" allowfullscreen="" loading="lazy" class="w-full fade-up"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- Mapa -->
+        <div class="fade-up">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14702.577813238768!2d-47.0291171!3d-22.88958895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8cf64fd70d285%3A0x544878ed0df45765!2sAv.%20Jos%C3%A9%20Bonif%C3%A1cio%2C%201025%20-%20Jardim%20Flamboyant%2C%20Campinas%20-%20SP%2C%2013091-140!5e0!3m2!1spt-BR!2sbr!4v1741720373960!5m2!1spt-BR!2sbr"
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            class="w-full rounded-lg shadow-sm"
+            referrerpolicy="no-referrer-when-downgrade"
+            aria-label="Mapa mostrando a localização do consultório na Avenida José Bonifácio, 1025 - Jardim Flamboyant, Campinas">
+          </iframe>
+        </div>
       </div>
-
-      <!-- <div class="col-span-2 p-8 bg-white shadow-lg">
-        <form action="forms/contact.php" method="post" class="contact">
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            <div>
-              <label for="name-field" class="pb-2 block">Seu Name</label>
-              <input type="text" id="name-field" class="" required="">
-            </div>
-
-            <div>
-              <label for="email-field" class="pb-2 block">Seu Email</label>
-              <input type="email" class="" id="email-field" required="">
-            </div>
-
-            <div class="col-span-2">
-              <label for="subject-field" class="pb-2 block">Assunto</label>
-              <input type="text" class="" id="subject-field" required="">
-            </div>
-
-            <div class="col-span-2">
-              <label for="message-field" class="pb-2 block">Menssagem</label>
-              <textarea class="" rows="10" id="message-field" required=""></textarea>
-            </div>
-
-            <div class="text-center hidden">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-
-            </div>
-            <button type="submit">Send Message</button>
-
-          </div>
-        </form>
-      </div> -->
     </div>
   </section>
 </main>

@@ -1,53 +1,82 @@
 <app-header></app-header>
-<main>
-  <section id="about" class="mx-20 my-8">
-    <div class="section-title flex flex-col items-center mb-10">
-      <h2 class="text-3xl font-bold mb-4 pb-4 fade-up">Sobre</h2>
+<main class="pt-16 sm:pt-18 md:pt-20">
+  <section id="about" class="mx-4 sm:mx-8 md:mx-12 lg:mx-16 xl:mx-20 my-4 sm:my-6 md:my-8">
+    <div class="section-title flex flex-col items-center mb-6 sm:mb-8 md:mb-10">
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4 pb-2 sm:pb-4 fade-up">Sobre</h2>
     </div>
+    
     <div>
-      <p class="text-center fade-up">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      <p class="text-center text-sm sm:text-base fade-up px-2 sm:px-0">
+        Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+      </p>
     </div>
-    <div class="flex justify-center mt-8">
+    
+    <div class="flex justify-center mt-6 sm:mt-8">
       <div class="container">
-        <div class="grid grid-cols-3 gap-4 xl:mx-20">
-          <div class="sm:col-span-3 md:col-span-1">
-            <img ngSrc="/assets/gabriela-perfil.jpg" width="400" height="600" priority class="fade-up" alt="Gabriela Perfil">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-4 xl:mx-10 2xl:mx-20">
+          <div class="md:col-span-1 flex justify-center">
+            <img 
+              ngSrc="/assets/gabriela-perfil.jpg" 
+              width="400" 
+              height="600" 
+              priority 
+              class="fade-up w-full max-w-xs sm:max-w-sm md:max-w-full"
+              alt="Gabriela Perfil"
+            >
           </div>
-          <div class="sm:col-span-3 md:col-span-2 fade-up">
-            <h2 class="font-bold text-2xl">Psicóloga & Gestalt Terapeuta.</h2>
-            <p class="italic mt-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+          
+          <div class="md:col-span-2 fade-up px-2 sm:px-0">
+            <h2 class="font-bold text-lg sm:text-xl md:text-2xl text-center md:text-left">
+              Psicóloga & Gestalt Terapeuta.
+            </h2>
+            
+            <p class="italic mt-4 sm:mt-6 md:mt-8 text-sm sm:text-base text-center md:text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <div class="grid grid-cols-2 gap-4 mt-8">
-              <div class="sm:col-span-2 md:col-span-1">
-                <ul class="p-0 list-none">
-                  <li class="mb-5 flex items-center">
-                    <i class="bi bi-chevron-right text-lg mr-1.5"></i> <strong>Birthday:</strong> <span class="ms-2">1 May 1995</span>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 sm:mt-8">
+              <div class="sm:col-span-1">
+                <ul class="p-0 list-none space-y-3 sm:space-y-4">
+                  <li class="flex items-center text-sm sm:text-base">
+                    <i class="bi bi-chevron-right text-base sm:text-lg mr-1.5"></i> 
+                    <strong class="whitespace-nowrap">Birthday:</strong> 
+                    <span class="ms-2">1 May 1995</span>
                   </li>
-                  <li class="mb-5 flex items-center">
-                    <i class="bi bi-chevron-right text-lg mr-1.5"></i> <strong>Birthday:</strong> <span class="ms-2">1 May 1995</span>
+                  <li class="flex items-center text-sm sm:text-base">
+                    <i class="bi bi-chevron-right text-base sm:text-lg mr-1.5"></i> 
+                    <strong class="whitespace-nowrap">Birthday:</strong> 
+                    <span class="ms-2">1 May 1995</span>
                   </li>
-                  <li class="mb-5 flex items-center">
-                    <i class="bi bi-chevron-right text-lg mr-1.5"></i> <strong>Birthday:</strong> <span class="ms-2">1 May 1995</span>
+                  <li class="flex items-center text-sm sm:text-base">
+                    <i class="bi bi-chevron-right text-base sm:text-lg mr-1.5"></i> 
+                    <strong class="whitespace-nowrap">Birthday:</strong> 
+                    <span class="ms-2">1 May 1995</span>
                   </li>
                 </ul>
               </div>
-              <div class="sm:col-span-2 md:col-span-1">
-                <ul class="p-0 list-none">
-                  <li class="mb-5 flex items-center">
-                    <i class="bi bi-chevron-right text-lg mr-1.5"></i> <strong>Birthday:</strong> <span class="ms-2">1 May 1995</span>
+              
+              <div class="sm:col-span-1">
+                <ul class="p-0 list-none space-y-3 sm:space-y-4">
+                  <li class="flex items-center text-sm sm:text-base">
+                    <i class="bi bi-chevron-right text-base sm:text-lg mr-1.5"></i> 
+                    <strong class="whitespace-nowrap">Birthday:</strong> 
+                    <span class="ms-2">1 May 1995</span>
                   </li>
-                  <li class="mb-5 flex items-center">
-                    <i class="bi bi-chevron-right text-lg mr-1.5"></i> <strong>Birthday:</strong> <span class="ms-2">1 May 1995</span>
+                  <li class="flex items-center text-sm sm:text-base">
+                    <i class="bi bi-chevron-right text-base sm:text-lg mr-1.5"></i> 
+                    <strong class="whitespace-nowrap">Birthday:</strong> 
+                    <span class="ms-2">1 May 1995</span>
                   </li>
-                  <li class="mb-5 flex items-center">
-                    <i class="bi bi-chevron-right text-lg mr-1.5"></i> <strong>Birthday:</strong> <span class="ms-2">1 May 1995</span>
+                  <li class="flex items-center text-sm sm:text-base">
+                    <i class="bi bi-chevron-right text-base sm:text-lg mr-1.5"></i> 
+                    <strong class="whitespace-nowrap">Birthday:</strong> 
+                    <span class="ms-2">1 May 1995</span>
                   </li>
                 </ul>
               </div>
             </div>
-            <p>
+            
+            <p class="mt-4 sm:mt-6 text-sm sm:text-base">
               Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.
             </p>
           </div>
@@ -55,42 +84,68 @@
       </div>
     </div>
 
-    <div>
-      <div class="section-title flex flex-col items-center my-10">
-        <h2 class="text-3xl font-bold mb-4 pb-4 fade-up">Experiências Profissionais</h2>
+    <div class="mt-12 sm:mt-16 md:mt-20" id="experiencias">
+      <div class="section-title flex flex-col items-center my-6 sm:my-8 md:my-10">
+        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4 pb-2 sm:pb-4 fade-up">
+          Experiências Profissionais
+        </h2>
       </div>
-      <div class="items-start mt-4 mx-52 fade-up-slowly">
+      
+      <div class="fade-up-slowly px-2 sm:px-4 md:px-8 lg:px-16 xl:px-20 2xl:px-32">
+        <div class="space-y-4 sm:space-y-5">
           <div class="resume-item">
-            <h4>Atendimento psicoterapêutico individual: adolescentes, adultos e idosos</h4>
+            <h4 class="text-sm sm:text-base md:text-md">
+              Atendimento psicoterapêutico individual: adolescentes, adultos e idosos
+            </h4>
           </div>
           <div class="resume-item">
-            <h4>Orientação e aconselhamento em decorrência da pandemia</h4>
+            <h4 class="text-sm sm:text-base md:text-lg">
+              Orientação e aconselhamento em decorrência da pandemia
+            </h4>
           </div>
           <div class="resume-item">
-            <h4>Psicoterapia para mulheres vítimas de violência doméstica</h4>
+            <h4 class="text-sm sm:text-base md:text-lg">
+              Psicoterapia para mulheres vítimas de violência doméstica
+            </h4>
           </div>
           <div class="resume-item">
-            <h4>Avaliação Psicológica e Perícia nas esferas civil e criminal</h4>
+            <h4 class="text-sm sm:text-base md:text-lg">
+              Avaliação Psicológica e Perícia nas esferas civil e criminal
+            </h4>
           </div>
           <div class="resume-item">
-            <h4>Mediadora e Conciliadora</h4>
+            <h4 class="text-sm sm:text-base md:text-lg">
+              Mediadora e Conciliadora
+            </h4>
           </div>
           <div class="resume-item">
-            <h4>Atendimento psicoterápico: adolescentes, adulto e idosos em situação vulnerável.</h4>
+            <h4 class="text-sm sm:text-base md:text-lg">
+              Atendimento psicoterápico: adolescentes, adulto e idosos em situação vulnerável.
+            </h4>
           </div>
+        </div>
       </div>
     </div>
 
-    <div>
-      <div class="section-title flex flex-col items-center my-10">
-        <h2 class="text-3xl font-bold mb-4 pb-4 scroll">Formações</h2>
+    <div class="my-12 sm:mt-16 md:mt-20" id="formacoes">
+      <div class="section-title flex flex-col items-center my-6 sm:my-8 md:my-10">
+        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4 pb-2 sm:pb-4 scroll">
+          Formações
+        </h2>
       </div>
-      <div class="items-start mt-4 mx-52">
-        <div class="resume-item">
-          <h4>Psicóloga graduada pela Universidade Paulista</h4>
-        </div>
-        <div class="resume-item">
-          <h4>Gestalt Terapeuta pela escola APRIMORA</h4>
+      
+      <div class="px-2 sm:px-4 md:px-8 lg:px-16 xl:px-20 2xl:px-32">
+        <div class="space-y-4 sm:space-y-5">
+          <div class="resume-item">
+            <h4 class="text-sm sm:text-base md:text-lg">
+              Psicóloga graduada pela Universidade Paulista
+            </h4>
+          </div>
+          <div class="resume-item">
+            <h4 class="text-sm sm:text-base md:text-lg">
+              Gestalt Terapeuta pela escola APRIMORA
+            </h4>
+          </div>
         </div>
       </div>
     </div>
