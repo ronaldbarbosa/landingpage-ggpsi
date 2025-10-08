@@ -1,9 +1,13 @@
-<nav>
+<nav class="navmenu">
   <ul class="flex list-none items-center">
-    <li class="relative whitespace-nowrap p-3"><a class="link" [routerLink]="['/']" routerLinkActive="link-active" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
-    <li class="relative whitespace-nowrap p-3"><a class="link" [routerLink]="['/sobre']" routerLinkActive="link-active" [routerLinkActiveOptions]="{ exact: true }">Sobre</a></li>
-    <!-- <li class="relative whitespace-nowrap p-3"><a class="link" [routerLink]="['/curriculo']" routerLinkActive="link-active" [routerLinkActiveOptions]="{ exact: true }">Currículo</a></li> -->
-    <li class="relative whitespace-nowrap p-3"><a class="link" [routerLink]="['/servicos']" routerLinkActive="link-active" [routerLinkActiveOptions]="{ exact: true }">Serviços</a></li>
-    <li class="relative whitespace-nowrap p-3"><a class="link" [routerLink]="['/contato']" routerLinkActive="link-active" [routerLinkActiveOptions]="{ exact: true }">Contato</a></li>
+    <li class="relative whitespace-nowrap p-3"><a class="link" [routerLink]="['/']" routerLinkActive="link-active"
+        [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
+    <li class="relative whitespace-nowrap p-3"><a class="link" [routerLink]="['/sobre']" routerLinkActive="link-active"
+        [routerLinkActiveOptions]="{ exact: true }">Sobre</a></li>
+    <li class="relative whitespace-nowrap p-3"><a class="link" [routerLink]="['/servicos']"
+        routerLinkActive="link-active" [routerLinkActiveOptions]="{ exact: true }">Serviços</a></li>
+    <li class="relative whitespace-nowrap p-3"><a class="link" [routerLink]="['/contato']"
+        routerLinkActive="link-active" [routerLinkActiveOptions]="{ exact: true }">Contato</a></li>
   </ul>
+  <i class="mobile-nav-toggle xl:hidden bi bi-list"></i>
 </nav>

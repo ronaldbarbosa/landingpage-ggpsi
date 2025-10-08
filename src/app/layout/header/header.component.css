@@ -1,3 +1,17 @@
+@media (max-width: 1200px) {
+  .header .header-logo {
+    order: 1;
+  }
+
+  .header .header-social-links {
+    order: 2;
+  }
+
+  .header .navmenu {
+    order: 3;
+  }
+}
+
 header {
   background-color: var(--light);
 }

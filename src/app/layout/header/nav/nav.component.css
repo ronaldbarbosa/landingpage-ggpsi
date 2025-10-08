@@ -1,41 +1,29 @@
-.link,
-  .link:focus {
-    color: var(--primary);
-    font-size: 15px;
-    padding: 0 2px;
-    font-family: var(--primary);
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    white-space: nowrap;
-    transition: 0.3s;
-    position: relative;
-  }
+.link {
+  color: var(--primary);
+  font-size: 15px;
+  font-weight: 400;
+  position: relative;
+  transition: 0.3s;
+}
 
-  .link i,
-  .link:focus i {
-    font-size: 12px;
-    line-height: 0;
-    margin-left: 5px;
-    transition: 0.3s;
-  }
+.link:hover {
+  color: var(--primary-dark);
+}
 
-  .link:before {
-    content: "";
-    position: absolute;
-    height: 2px;
-    bottom: -6px;
-    left: 0;
-    background-color: var(--primary);
-    visibility: hidden;
-    width: 0px;
-    transition: all 0.3s ease-in-out 0s;
-  }
+.link::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: var(--primary);
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out;
+}
 
-  .link:hover:before,
-  li:hover>.link:before,
-  .link-active:before {
-    visibility: visible;
-    width: 100%;
-  }
+.link:hover::before,
+.router-link-active::before {
+  visibility: visible;
+  width: 100%;
+}

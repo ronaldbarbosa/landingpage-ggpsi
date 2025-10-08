@@ -1,9 +1,9 @@
 <header class="header flex justify-between items-center p-4 shadow-md sticky top-0">
-  <a class="header-logo flex-shrink-0" [routerLink]="['']" routerLinkActive="link-active" [routerLinkActiveOptions]="{ exact: true }">
+  <a class="header-logo flex-shrink-0 order-1" [routerLink]="['']" routerLinkActive="link-active" [routerLinkActiveOptions]="{ exact: true }">
     <h1 class="uppercase text-3xl font-light whitespace-nowrap">Gabriela Goia</h1>
   </a>
-  <app-nav class="absolute left-1/2 transform -translate-x-1/2"></app-nav>
-  <div class="flex items-center header-social-links flex-shrink-0">
+  <app-nav class="absolute left-1/2 transform -translate-x-1/2 header-nav-menu order-2 lg:order-3"></app-nav>
+  <div class="flex items-center header-social-links flex-shrink-0 order-3 lg:order-2">
     <a href="#" class="ps-1.5 inline-block text-xl"><i class="bi bi-facebook"></i></a>
     <a href="#" class="ps-1.5 inline-block text-xl"><i class="bi bi-instagram"></i></a>
     <a href="#" class="ps-1.5 inline-block text-xl"><i class="bi bi-linkedin"></i></a>
