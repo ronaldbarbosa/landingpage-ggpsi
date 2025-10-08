@@ -1,11 +1,9 @@
 import { afterNextRender, AfterViewInit, Component } from '@angular/core';
-import { HeaderComponent } from "../../layout/header/header.component";
-import { FooterComponent } from "../../layout/footer/footer.component";
 import { animate } from 'motion';
 
 @Component({
   selector: 'app-contact',
-  imports: [HeaderComponent, FooterComponent],
+  imports: [],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })

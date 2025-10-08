@@ -1,3 +1,4 @@
+/* Estilos do link desktop */
 .link {
   color: var(--primary);
   font-size: 15px;
@@ -23,7 +24,45 @@
 }
 
 .link:hover::before,
-.router-link-active::before {
+.link-active::before {
   visibility: visible;
   width: 100%;
+}
+
+/* Estilos do link mobile */
+.link-mobile {
+  color: var(--dark);
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.link-active-mobile {
+  background-color: var(--primary) !important;
+  color: white !important;
+}
+
+.link-mobile:hover {
+  background-color: color-mix(in srgb, var(--primary) 10%, transparent);
+  color: var(--primary-dark);
+}
+
+/* Botão hamburguer */
+.mobile-nav-toggle {
+  color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+.mobile-nav-toggle:hover {
+  color: var(--primary-dark);
+  transform: scale(1.1);
+}
+
+/* Redes sociais no menu mobile */
+.mobile-social-links a {
+  transition: all 0.3s ease;
+}
+
+.mobile-social-links a:hover {
+  transform: translateY(-2px);
 }

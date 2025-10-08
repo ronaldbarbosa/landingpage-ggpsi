@@ -1,12 +1,10 @@
 import { afterNextRender, Component } from '@angular/core';
-import { HeaderComponent } from "../../layout/header/header.component";
-import { FooterComponent } from "../../layout/footer/footer.component";
 import { NgOptimizedImage } from '@angular/common'
-import { animate, scroll } from 'motion';
+import { animate } from 'motion';
 
 @Component({
   selector: 'app-about',
-  imports: [HeaderComponent, FooterComponent, NgOptimizedImage],
+  imports: [NgOptimizedImage],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })
