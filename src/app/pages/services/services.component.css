@@ -1,0 +1,7 @@
+.section-title h2 {
+  border-bottom: 5px solid var(--primary);
+}
+
+i {
+  color: var(--primary);
+}
