@@ -1,0 +1,10 @@
+i {
+  color: var(--primary);
+  background: color-mix(in srgb, var(--primary), transparent 92%);
+  transition: all 0.3s ease-in-out;
+}
+
+.info-item:hover i {
+  background: var(--primary);
+  color: var(--lighter);
+}

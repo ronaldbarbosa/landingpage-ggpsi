@@ -4,8 +4,14 @@
   </div>
 
   <div>
-      <p class="text-center text-sm sm:text-base fade-up px-2 sm:px-0">
-        Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
-      </p>
-    </div>
+    <p class="text-center text-sm sm:text-base fade-up px-2 sm:px-0">
+      Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+    </p>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 mt-8 items-stretch">
+    @for (service of services; track $index) {
+      <app-service-card [service]="service" />
+    }
+  </div>
+
 </section>

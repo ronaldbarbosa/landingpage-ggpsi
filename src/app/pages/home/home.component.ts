@@ -1,10 +1,11 @@
 import { afterNextRender, Component } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
 import { animate } from 'motion';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [NgOptimizedImage],
+  imports: [NgOptimizedImage, RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

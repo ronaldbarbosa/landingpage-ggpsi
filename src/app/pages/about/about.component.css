@@ -9,7 +9,6 @@ i {
 .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid var(--primary);
   position: relative;
 }
 
@@ -30,7 +29,7 @@ i {
   height: 16px;
   border-radius: 50px;
   left: -9px;
-  top: 0;
+  top: 7px;
   background: var(--light);
   border: 2px solid var(--primary);
 }

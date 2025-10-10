@@ -1,8 +1,7 @@
 <nav class="navmenu">
-  <!-- Menu Desktop (visível em lg+) -->
   <ul class="hidden lg:flex list-none items-center space-x-2 xl:space-x-4">
     <li class="relative whitespace-nowrap p-2 xl:p-3">
-      <a class="link" [routerLink]="['/']" routerLinkActive="link-active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+      <a class="link" [routerLink]="['/']" routerLinkActive="link-active" [routerLinkActiveOptions]="{ exact: true }">Início</a>
     </li>
     <li class="relative whitespace-nowrap p-2 xl:p-3">
       <a class="link" [routerLink]="['/sobre']" routerLinkActive="link-active" [routerLinkActiveOptions]="{ exact: true }">Sobre</a>
@@ -15,16 +14,14 @@
     </li>
   </ul>
 
-  <!-- Botão Hamburguer (visível em mobile) -->
-  <i 
+  <i
     class="mobile-nav-toggle lg:hidden bi text-2xl cursor-pointer transition-transform duration-300"
     [class.bi-list]="!isMenuOpen"
     [class.bi-x]="isMenuOpen"
     (click)="toggleMenu()">
   </i>
 
-  <!-- Menu Mobile (overlay) -->
-  <div 
+  <div
     class="lg:hidden fixed inset-0 bg-blck/30 backdrop-invert backdrop-opacity-30 z-40 transition-opacity duration-300"
     [class.hidden]="!isMenuOpen"
     [class.opacity-0]="!isMenuOpen"
@@ -32,33 +29,30 @@
     (click)="closeMenu()">
   </div>
 
-  <!-- Menu Mobile (sidebar) -->
-  <div 
+  <div
     class="lg:hidden fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 transform transition-transform duration-300 ease-in-out"
     [class.translate-x-full]="!isMenuOpen"
     [class.translate-x-0]="isMenuOpen">
-    
-    <!-- Cabeçalho do Menu Mobile -->
+
     <div class="p-6">
       <h2 class="text-lg font-semibold text-gray-800">Menu</h2>
     </div>
-    
-    <!-- Links de Navegação -->
+
     <ul class="list-none p-4 space-y-4">
       <li>
-        <a 
+        <a
           class="link-mobile block p-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
-          [routerLink]="['/']" 
+          [routerLink]="['/']"
           routerLinkActive="link-active-mobile"
           [routerLinkActiveOptions]="{ exact: true }"
           (click)="closeMenu()">
-          Home
+          Início
         </a>
       </li>
       <li>
-        <a 
+        <a
           class="link-mobile block p-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
-          [routerLink]="['/sobre']" 
+          [routerLink]="['/sobre']"
           routerLinkActive="link-active-mobile"
           [routerLinkActiveOptions]="{ exact: true }"
           (click)="closeMenu()">
@@ -66,9 +60,9 @@
         </a>
       </li>
       <li>
-        <a 
+        <a
           class="link-mobile block p-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
-          [routerLink]="['/servicos']" 
+          [routerLink]="['/servicos']"
           routerLinkActive="link-active-mobile"
           [routerLinkActiveOptions]="{ exact: true }"
           (click)="closeMenu()">
@@ -76,9 +70,9 @@
         </a>
       </li>
       <li>
-        <a 
+        <a
           class="link-mobile block p-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
-          [routerLink]="['/contato']" 
+          [routerLink]="['/contato']"
           routerLinkActive="link-active-mobile"
           [routerLinkActiveOptions]="{ exact: true }"
           (click)="closeMenu()">
@@ -87,7 +81,6 @@
       </li>
     </ul>
 
-    <!-- Redes Sociais no Menu Mobile -->
     <div class="absolute bottom-0 left-0 right-0 p-6 bg-gray-50">
       <div class="flex justify-center space-x-4">
         <a href="#" class="flex items-center justify-center w-10 h-10 rounded-full bg-gray-200 hover:bg-primary hover:text-white transition-colors">
