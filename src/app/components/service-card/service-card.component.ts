@@ -1,5 +1,4 @@
-import { afterNextRender, Component, Input } from '@angular/core';
-import { animate } from 'motion';
+import { Component, Input } from '@angular/core';
 import { ServiceCard } from '../../interfaces/ServiceCard';
 
 @Component({
@@ -10,13 +9,4 @@ import { ServiceCard } from '../../interfaces/ServiceCard';
 })
 export class ServiceCardComponent {
   @Input({ required: true }) service!: ServiceCard;
-
-  constructor() {
-      afterNextRender(() => this.initAnimations());
-    }
-
-    private initAnimations() {
-      animate('.fade-up', { opacity: [0, 1], y: [-20, 0] }, { duration: 1 });
-      animate('.fade-up-slowly', { opacity: [0, 1], y: [-50, 0] }, { duration: 1.5 });
-    }
 }

@@ -10,5 +10,5 @@ import { FooterComponent } from './layout/footer/footer.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'gabriela-goia-psi';
+  title = 'giovana-psi';
 }

@@ -14,7 +14,10 @@ export class AboutComponent {
   }
 
   private initAnimations() {
-    animate('.fade-up', { opacity: [0, 1], y: [-20, 0] }, { duration: 1 });
-    animate('.fade-up-slowly', { opacity: [0, 1], y: [-50, 0] }, { duration: 1.5 });
+    const elements = document.querySelectorAll('.fade-up, .fade-up-slowly');
+    elements.forEach((el, i) => {
+      const isSlowly = el.classList.contains('fade-up-slowly');
+      animate(el, { opacity: [0, 1], y: [isSlowly ? -50 : -20, 0] }, { duration: isSlowly ? 1.5 : 1, delay: i * 0.15 });
+    });
   }
 }
